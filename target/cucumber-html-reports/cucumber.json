@@ -1,0 +1,238 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "line": 5,
+        "name": ":",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1561451226,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I am on DarkSky Main Page",
+            "match": {
+              "location": "DarkSkyMainPageSD.setDarkSkyMainPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5162337403,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SharedSD.setUp()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "Verify timeline is displayed in correct format",
+        "description": "",
+        "id": "darksky-page-feature;verify-timeline-is-displayed-in-correct-format",
+        "after": [
+          {
+            "result": {
+              "duration": 178659277,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SharedSD.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5323295686,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I entered California into search box and click search button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "California",
+                  "offset": 10
+                }
+              ],
+              "location": "DarkSkyMainPageSD.verifyChosenLocation(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2341614490,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I verify timeline is displayed with two hours incremented",
+            "match": {
+              "location": "DarkSkyMainPageSD.verifyTimeLine()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 8,
+            "name": "@timeline"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": ":",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1010564008,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I am on DarkSky Main Page",
+            "match": {
+              "location": "DarkSkyMainPageSD.setDarkSkyMainPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2558834216,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SharedSD.setUp()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Verify day temperatures timeline",
+        "description": "",
+        "id": "darksky-page-feature;verify-day-temperatures-timeline",
+        "after": [
+          {
+            "result": {
+              "duration": 137782205,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SharedSD.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4065382826,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I expand today",
+            "match": {
+              "location": "DarkSkyMainPageSD.expandToday()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 164954142,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I get all tempList",
+            "match": {
+              "location": "DarkSkyMainPageSD.getAlltempList()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3101796726,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I find maximum temperature",
+            "match": {
+              "location": "DarkSkyMainPageSD.findMaxTemp()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3102458359,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I find minimum temperature",
+            "match": {
+              "location": "DarkSkyMainPageSD.findMinTemp()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3189545180,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I verify maximum temperature",
+            "match": {
+              "location": "DarkSkyMainPageSD.verifyMaxTemp()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3127098785,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I verify minimum temperature",
+            "match": {
+              "location": "DarkSkyMainPageSD.verifyMinTemp()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 13,
+            "name": "@temperature"
+          }
+        ]
+      }
+    ],
+    "name": "DarkSky Page feature",
+    "description": "",
+    "id": "darksky-page-feature",
+    "keyword": "Feature",
+    "uri": "DarkSkyMain.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@web"
+      }
+    ]
+  }
+]
